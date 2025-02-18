@@ -11,4 +11,3 @@ int main(void)
 
 	return (0);
 }
-gcc -o 5-printf_0 -Wall
