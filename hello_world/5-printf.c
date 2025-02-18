@@ -11,4 +11,4 @@ int main(void)
 
 	return (0);
 }
-gcc -Wall -o program program.c
+gcc -o 5-printf_0 -Wall
