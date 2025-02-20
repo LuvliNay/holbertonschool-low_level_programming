@@ -13,9 +13,7 @@ int main(void)
 	{
 		printf("%d", i);
 		if (i < 9)
-		{
-			printf(", ");
-		}
+
 		i++;
 	}
 	printf("\n");
