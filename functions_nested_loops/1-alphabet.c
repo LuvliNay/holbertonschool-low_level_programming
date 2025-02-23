@@ -2,31 +2,22 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
+ * print_alphabet - check the code
  *
  * Return: Always 0 (Success)
  */
-int _putchar(char c);
-
+int main(void)
 void print_alphabet(void)
 {
-	char letter;
+	char letter = 'a';
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	while (letter <= 'z')
 	{
 		_putchar(letter);
+		letter++;
 	}
+
 	_putchar('\n');
-}
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-int main(void)
-{
-	print_alphabet();
 
 	return (0);
 }
