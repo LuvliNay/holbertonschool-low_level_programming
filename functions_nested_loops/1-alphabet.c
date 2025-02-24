@@ -1,23 +1,18 @@
 #include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 
 /**
- * print_alphabet - check the code
- *
- * Return: Always 0 (Success)
+ * print_alphabet - printing the alphabet in lower cases.
+ * Return: value 0.
  */
-int main(void)
+
 void print_alphabet(void)
 {
-	char letter = 'a';
+	char lower;
 
-	while (letter <= 'z')
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
-		_putchar(letter);
-		letter++;
+		_putchar(lower);
 	}
-
 	_putchar('\n');
-
-	return (0);
 }
