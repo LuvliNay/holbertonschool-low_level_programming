@@ -5,7 +5,6 @@
  * print_alphabet - printing the alphabet in lower cases.
  * Return: value 0.
  */
-
 void print_alphabet(void)
 {
 	char lower;
