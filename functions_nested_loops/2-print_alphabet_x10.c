@@ -1,22 +1,30 @@
-#include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
- * print_alphabet_x10 - Prints the alphabet 10 times in lowercase,
- *                      followed by a new line.
- * Return: Always 0 (Success)
+ * _putchar(char c) - writes a character to stdout
+ * @c: The character to print
+ *
+ * Return: SUCCESS (0)
+ */
+int _putchar(char c)
+{
+	return write(1, &c, 1);
+}
+
+/**
+ * print_alphabet_x10 - prints the alphabet 10 times in lowercase, followed by a new line
  */
 void print_alphabet_x10(void)
 {
+	char letter;
 	int i;
-	char ch;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (ch = 'a'; ch <= 'z'; ch++)
+		for (letter = 'a'; letter <= 'z'; letter++)
 		{
-			putchar(ch);
+			_putchar(letter);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
