@@ -5,14 +5,18 @@
  *
  * Return: Always 0.
  */
+
 void print_most_numbers(void)
 {
-	char num[] = "0123456789\n";
-	int i = 0;
+	char num;
 
-	while (num[i] != '\0')
+	for (num = '0'; num <= '9'; num++)
 	{
-		_putchar(num[i]);
-		i++;
+		if (num == '2')
+			num++;
+		if (num == '4')
+			num++;
+		_putchar(num);
 	}
+	_putchar('\n');
 }
