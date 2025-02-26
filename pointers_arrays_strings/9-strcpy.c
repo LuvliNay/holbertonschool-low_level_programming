@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * *_strcpy - copies the string pointed to by src
+ * *_strcpy - copies the string pointed to by src.
  * @dest: pointer.
  * @src: pointer.
  * Return: value 0.
@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 	for (len = 0; src[len] != '\0'; len++)
 		;
 
-	for (cop = 0; dest[cop] <= len; cop++)
+	for (cop = 0; cop <= len; cop++)
 		dest[cop] = src[cop];
 	dest[cop] = '\0';
 
