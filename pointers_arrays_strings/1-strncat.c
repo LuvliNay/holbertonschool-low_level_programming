@@ -2,10 +2,10 @@
 #include <string.h>
 
 /**
- * _strncat - concatenates two strings.
- * @dest: pointer
- * @src: pointer
- * @n: variable given.
+ * _strncat - prints two strings together.
+ * @dest: pointer.
+ * @src: pointer.
+ * @n: pointer.
  * Return: Always 0.
  */
 
@@ -23,8 +23,8 @@ char *_strncat(char *dest, char *src, int n)
 
 /**
  * _strlen - finding the length of a string.
- * @str: pointer
- * Return: value 0
+ * @str: pointer.
+ * Return: value 0.
  */
 
 int _strlen(char *str)
