@@ -8,7 +8,7 @@
  * Return: value 0.
  */
 
-int sqrt_helper(int n)
+int sqrt_helper(int n, int guess)
 {
 	if (guess * guess == n)
 		return (guess);
