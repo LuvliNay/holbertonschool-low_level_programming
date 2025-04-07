@@ -40,7 +40,7 @@ void close_file(int fd)
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit (100);
+		exit(100);
 	}
 }
 /**
@@ -49,7 +49,7 @@ void close_file(int fd)
  * @argv: array of pointers.
  * Return: SUCCESS 0.
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int from, to, r, w;
 	char *buffer;
@@ -57,7 +57,7 @@ int main (int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit (97);
+		exit(97);
 	}
 
 	buffer = create_buffer(argv[2]);
